@@ -4,7 +4,7 @@ import Profile from '../images/Profile.svg?react'
 const Github = () => {
 
   const handleResume=()=>{
-    window.open("https://drive.google.com/file/d/1H4Ild4eJsSjZqrP6jKDQq1msfszEFI9l/view?usp=sharing","blank")
+    window.open("https://drive.google.com/file/d/1knnY4EvEchE15hHGoIH5O3Kx72hTYgL9/view?usp=sharing","blank")
   }
   const handleProfile=()=>{
     window.open("https://github.com/adithyan-mb","blank")
