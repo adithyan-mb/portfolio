@@ -7,8 +7,8 @@ const Layout = () => {
 
 
 
-    alert(" Hide  bookmark panel for better experience  (crtl +shift+B)",[])
-  })
+    alert(" Hide  bookmark panel for better experience  (crtl +shift+B)")
+  },[])
   return (
     <>
     <Navbar/>
