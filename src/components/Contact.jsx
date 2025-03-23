@@ -8,7 +8,7 @@ import Mail from '../images/Mail.svg?react'
 const Contact = () => {
   return (
     <div className='bg-[#1E1E1E]  overflow-hidden w-full   text-white h-screen '>
-        <div className='text-white text-6xl text-center pt-10'>Let's Connect</div>
+        <div className='text-white text-5xl text-center pt-10'>Let's Connect</div>
 
 
         <div className="grid grid-cols-5 items-center gap-8 min-h-[70vh] flex items-center justify-center">

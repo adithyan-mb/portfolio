@@ -54,7 +54,7 @@ const data =useSelector((state)=>(state.github))
  
   return (
     <div className='bg-[#1E1E1E] w-full h-screen overflow-hidden '>
-       <div className='px-20   text-6xl text-start pt-10'>Github Profile</div>
+       <div className='px-20   text-5xl text-start pt-10'>Github Profile</div>
      < div className="grid grid-cols-2 items-center gap-8 min-h-[70vh] flex items-center justify-center">
         <div className='flex  space-y-4  ' onClick={handleProfile}>
           <Profile className="h-110 cursor-pointer"/>
