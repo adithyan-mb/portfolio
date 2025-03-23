@@ -28,7 +28,7 @@ const Contact = () => {
               </div>
   </div>
 
-  <div className="col-span-1 flex flex-col justify-center gap-5 pt-20">
+  <div className="col-span-1 flex flex-col justify-center  pt-20">
   <div className='text-3xl italic self-center font-allison  text-3xl'>OR</div>
   <Mail className=" h-120"/>
   </div>

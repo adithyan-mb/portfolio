@@ -13,7 +13,7 @@ const Projects = () => {
     <div className='bg-[#1E1E1E] w-full h-screen overflow-hidden '>
       <div className='px-20   text-5xl text-start pt-10'>Projects</div>
       
-      <div className='p-5'>
+      <div className='pt-3'>
          <div className='grid grid-cols-3 p-2 grid-rows-2 items-center gap-y-7 justify-items-center w-3/5'> 
            <Card 
            src={todo} 
