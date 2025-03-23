@@ -1,15 +1,55 @@
-import React from 'react'
+
+import React, { useEffect } from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Profile from '../images/Profile.svg?react'
-const Github = () => {
 
+import { useSelector ,useDispatch } from 'react-redux';
+import {addData}   from './slices/Githubslice'
+
+const Github = () => {
+  
+
+  const dispatch=useDispatch()
+
+   useEffect(()=>{
+
+           const callApi= async ()=>{
+
+                                 const response= await fetch("https://api.github.com/users/adithyan-mb");
+                                 const info =await response.json()
+                                 
+                                 const sentinfo={
+                                   login:info.login,
+                                   url:info.html_url,
+                                   name :info.name,
+                                   location :info.location,
+                                   public_repos :info.public_repos,
+                                 }
+                                   dispatch(addData(sentinfo))
+                                 
+                               
+           }
+
+           callApi()
+
+        
+
+
+
+   },[])
+const data =useSelector((state)=>(state.github))
+       
+
+   
   const handleResume=()=>{
-    window.open("https://drive.google.com/file/d/1H4Ild4eJsSjZqrP6jKDQq1msfszEFI9l/view?usp=sharing","blank")
+    window.open(`${data.resume_url}`,"blank")
   }
   const handleProfile=()=>{
-    window.open("https://github.com/adithyan-mb","blank")
+    window.open(`${data.url}`,"blank")
 
   }
+
+ 
   return (
     <div className='bg-[#1E1E1E] w-full h-screen overflow-hidden '>
        <div className='px-20   text-6xl text-start pt-10'>Github Profile</div>
@@ -22,7 +62,7 @@ const Github = () => {
          <div className='flex flex-col gap-5 mr-12'>
               <div className='flex gap-2'>
                 <p className='font-bold'>User_name : </p>
-                <a href="https://github.com/adithyan-mb" target="_blank"  > adithyan_mb </a> 
+                <a href={data.url} target="_blank"  > {data.login}</a> 
                 <FaExternalLinkAlt size="0.75rem" color= "#6027C3"/>
               </div>
               <div className='flex gap-2 '>
@@ -39,11 +79,11 @@ const Github = () => {
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Public repos : </p>
-                <p> 4</p>
+                <p> {data.public_repos}</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Location : </p>
-                <p> Kerala ,India</p>
+                <p> {data.location}</p>
               </div>
               <button  onClick={handleResume} className=' h-10 w-50 p-1 bg-[#6027C3]  rounded-lg cursor-pointer '>Download Resume </button>
               
