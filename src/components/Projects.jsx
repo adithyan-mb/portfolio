@@ -7,6 +7,7 @@ import tictactoe from'../images/projeectIcons/tic_tac_toe.png'
 import todo from '../images/projeectIcons/todo.png'
 import  portfolio from '../images/projeectIcons/portfolio.png'
 import notfound from '../images/projeectIcons/notfound.png'
+import movieinfo from  '../images/projeectIcons/movieinfo.png'
 
 const Projects = () => {
   return (
@@ -51,7 +52,7 @@ const Projects = () => {
            handleClick={()=>{window.open("https://www.figma.com/design/Fy1EAM74YTKGdP9N5xdHPR/portfolio?node-id=0-1&t=qS6Oh66tlYotuYeM-1","blank")}}
            />
 
-          <Card src={notfound} 
+          <Card src={movieinfo} 
            title={"Movieinfo.com" } 
            description={"Get upates, reviews and trailers of latest movies (work in Progress...)"} 
            tech={"React.js · Api · Tailwind CSS"}
