@@ -15,7 +15,7 @@ const initialState={
         name: "NAME",     
         location: "IND",
         public_repos: 0,
-        resume_url: ""
+        resume_url: "https://drive.google.com/file/d/1knnY4EvEchE15hHGoIH5O3Kx72hTYgL9/view?usp=sharing"
        
       
 }
