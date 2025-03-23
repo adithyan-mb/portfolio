@@ -24,6 +24,8 @@ const Github = () => {
                                    name :info.name,
                                    location :info.location,
                                    public_repos :info.public_repos,
+                                   resume_url:"https://drive.google.com/file/d/1knnY4EvEchE15hHGoIH5O3Kx72hTYgL9/view?usp=sharing"
+
                                  }
                                    dispatch(addData(sentinfo))
                                  
