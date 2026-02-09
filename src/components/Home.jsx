@@ -9,7 +9,7 @@ const Home = () => {
   <div className="text-white flex flex-col items-center gap-10 text-center">
     <p onClick={()=>{navigate('/github')}}className="text-8xl font-Helvetica font-bold cursor-pointer">I'm Adithyan MB</p>
     <p className="text-lg">
-      Software Developer from INDIA with interest in Embdedded software and IOT 
+      Engineer from INDIA with interest in Embdedded software and IOT 
     </p>
     <p className='font-allison  text-3xl ' >Being Better Than Yesterday</p>
   </div>
