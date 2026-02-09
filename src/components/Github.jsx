@@ -69,15 +69,18 @@ const data =useSelector((state)=>(state.github))
               </div>
               <div className='flex gap-2 '>
                 <p className='font-bold'>Bio:</p>
-                <p className='text-pretty'>An aspiring software developer with a strong passion for web development, constantly learning and refining skills to build innovative and efficient digital experiences. Dedicated to continuous improvement, striving each day to be better than yesterday.</p>
+                <p className='text-pretty'>Engineering graduate with practical experience in developing software solutions, with a strong interest in Embedded
+Systems and IoT. Proficient in C programming, debugging, and performance optimization. Experienced in working with IoT
+devices and integrating software with hardware to build functional, real-world applications. Motivated to contribute to
+innovative projects that combine coding, electronics, and practical problem-solving..</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Role :</p>
-                <p>Front End Developer</p>
+                <p>Embedded IOT Developer</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Tech Stack : </p>
-                <p>React.js, JavaScript, Tailwind, C++</p>
+                <p>IoT, Arduino, ESP32,Python ,C</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Public repos : </p>
