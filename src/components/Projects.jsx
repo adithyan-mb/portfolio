@@ -36,14 +36,14 @@ const Projects = () => {
            <Card src={mp3} 
            title={"MP3 Tag Reader/Editor" }
             description={"Read an MP3 file’s meta data and edit any specific data field."}
-             tech={"C · File operations · Pointers · DMA · Command line arguments"}
+             tech={"C · File operations · Pointers · DMA · Command line arguments (CLA)"}
              handleClick={()=>{window.open("https://github.com/adithyan-mb/mp3_tag_reader_and_editor")}}
              />
 
            <Card src={lsb}
             title={"Image Steganography " }
              description={"Image Steganography using LSB Encoding and Decoding"} 
-             tech={"C · File operations · Pointers · Bitwise operations · Command line arguments"}
+             tech={"C · File operations · Pointers · Bitwise operations · CLA"}
              handleClick={()=>{window.open("https://github.com/adithyan-mb/lsb_image_steganography","blank")}}
              />
 
