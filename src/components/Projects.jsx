@@ -9,6 +9,8 @@ import  portfolio from '../images/projeectIcons/portfolio.png'
 import notfound from '../images/projeectIcons/notfound.png'
 import movieinfo from  '../images/projeectIcons/movieinfo.png'
 import address_book from '../images/projeectIcons/address_book.jpg'
+import lsb_image_steganography from '../images/projeectIcons/lsb_image_steganography'
+import mp3 from '../images/projeectIcons/mp3_tag_reader'
 
 const Projects = () => {
   return (
@@ -19,32 +21,38 @@ const Projects = () => {
          <div className='grid grid-cols-3 p-2 grid-rows-2 items-center gap-y-7 justify-items-center w-3/5'> 
            <Card 
            src={todo} 
-           title={"Home automation monitoring system (MQTT)" }  
-           description={"A Todo App created using React. uses context Api to manage states. with Local storage support ."} 
-           tech={"React.js · Context Api · Tailwind CSS"}
-           handleClick={()=>{window.open("https://adithyanmb-todo.vercel.app/","blank")}}
+           title={"Home automation" }  
+           description={"Home automation monitoring through MQTT."} 
+           tech={"C++ · MQTT protocol  Wi-Fi / local network"}
+           handleClick={()=>{window.open("","blank")}}
            />
-
-           <Card src={address_book}
-            title={"Address book" } 
-           description={"A web tool that prvoides current temperature, wind speed & humidity of any place ."} 
-           tech={"React.js · REST Api · Tailwind CSS"}
-           handleClick={()=>{window.open("https://adithyanmb-weather.vercel.app/","blank")}}
+     <Card src={movieinfo} 
+           title={"State monitor" } 
+           description={"Industrial Machine State Monitoring System  of a conveyor belt."} 
+           tech={"C++ · ESP32 · Wokwi simulator · ThingSpeak"}
            />
+         
 
-           <Card src={tictactoe} 
+           <Card src={mp3} 
            title={"MP3 Tag Reader/Editor" }
-            description={"A simple TIC TAC TOE game , using Vanilla JavasScript ans styled using Bootstrap."}
-             tech={"JavaScript · Bootstrap (Framework)"}
-             handleClick={()=>{window.open("https://adithyan-mb.github.io/tic_tac_toe/","blank")}}
+            description={"Read an MP3 file’s meta data and edit any specific data field."}
+             tech={"Embedded C · File operations · Pointers · Dynamic Memory Allocation (DMA)· Command line arguments"}
+             handleClick={()=>{window.open("https://github.com/adithyan-mb/mp3_tag_reader_and_editor")}}
              />
 
-           <Card src={amazon}
-            title={"Image Steganography using LSB Encoding and Decoding" }
-             description={"Amazon clone (UI clone) using HTML and CSS only"} 
-             tech={"HTML5 · Vanilla CSS"}
-             handleClick={()=>{window.open("https://adithyan-mb.github.io/amazon-clone/","blank")}}
+           <Card src={lsb_image_steganography}
+            title={"Image Steganography " }
+             description={"Image Steganography using LSB Encoding and Decoding"} 
+             tech={"Embedded C · File operations · Pointers · Bitwise operations · Command line arguments"}
+             handleClick={()=>{window.open("https://github.com/adithyan-mb/lsb_image_steganography","blank")}}
              />
+
+               <Card src={address_book}
+            title={"Address book" } 
+           description={"Digital adaptation of the physical Address book."} 
+           tech={"Advanced C · Structures · Functions · File Handling"}
+           handleClick={()=>{window.open("https://github.com/adithyan-mb/address_book","blank")}}
+           />
           
            <Card src={portfolio} 
            title={"Portfolio" } 
@@ -53,11 +61,7 @@ const Projects = () => {
            handleClick={()=>{window.open("https://www.figma.com/design/Fy1EAM74YTKGdP9N5xdHPR/portfolio?node-id=0-1&t=qS6Oh66tlYotuYeM-1","blank")}}
            />
 
-          <Card src={movieinfo} 
-           title={"Movieinfo.com" } 
-           description={"Get upates, reviews and trailers of latest movies (work in Progress...)"} 
-           tech={"React.js · Api · Tailwind CSS"}
-           />
+         
 
 
          </div>
