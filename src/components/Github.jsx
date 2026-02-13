@@ -71,8 +71,7 @@ const data =useSelector((state)=>(state.github))
                 <p className='font-bold'>Bio:</p>
                 <p className='text-pretty'>Engineering graduate with practical experience in developing software solutions, with a strong interest in Embedded
 Systems and IoT. Proficient in C programming, debugging, and performance optimization. Experienced in working with IoT
-devices and integrating software with hardware to build functional, real-world applications. Motivated to contribute to
-innovative projects that combine coding, electronics, and practical problem-solving..</p>
+devices and integrating software with hardware to build functional, real-world applications.</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Role :</p>
