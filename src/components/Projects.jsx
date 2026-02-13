@@ -9,8 +9,8 @@ import  portfolio from '../images/projeectIcons/portfolio.png'
 import notfound from '../images/projeectIcons/notfound.png'
 import movieinfo from  '../images/projeectIcons/movieinfo.png'
 import address_book from '../images/projeectIcons/address_book.jpg'
-import lsb_image_steganography from '../images/projeectIcons/lsb_image_steganography'
-import mp3 from '../images/projeectIcons/mp3_tag_reader'
+import lsb from '../images/projeectIcons/lsb_image_steganography.png'
+import mp3 from '../images/projeectIcons/mp3_tag_reader.jpg'
 
 const Projects = () => {
   return (
@@ -40,7 +40,7 @@ const Projects = () => {
              handleClick={()=>{window.open("https://github.com/adithyan-mb/mp3_tag_reader_and_editor")}}
              />
 
-           <Card src={lsb_image_steganography}
+           <Card src={lsb}
             title={"Image Steganography " }
              description={"Image Steganography using LSB Encoding and Decoding"} 
              tech={"Embedded C · File operations · Pointers · Bitwise operations · Command line arguments"}
