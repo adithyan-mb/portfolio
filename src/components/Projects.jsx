@@ -8,6 +8,7 @@ import todo from '../images/projeectIcons/todo.png'
 import  portfolio from '../images/projeectIcons/portfolio.png'
 import notfound from '../images/projeectIcons/notfound.png'
 import movieinfo from  '../images/projeectIcons/movieinfo.png'
+import address_book from '../images/projeectIcons/address_book.jpg'
 
 const Projects = () => {
   return (
@@ -18,28 +19,28 @@ const Projects = () => {
          <div className='grid grid-cols-3 p-2 grid-rows-2 items-center gap-y-7 justify-items-center w-3/5'> 
            <Card 
            src={todo} 
-           title={"Todo" } 
+           title={"Home automation monitoring system (MQTT)" }  
            description={"A Todo App created using React. uses context Api to manage states. with Local storage support ."} 
            tech={"React.js · Context Api · Tailwind CSS"}
            handleClick={()=>{window.open("https://adithyanmb-todo.vercel.app/","blank")}}
            />
 
-           <Card src={weather}
-            title={"Weather App" } 
+           <Card src={address_book}
+            title={"Address book" } 
            description={"A web tool that prvoides current temperature, wind speed & humidity of any place ."} 
            tech={"React.js · REST Api · Tailwind CSS"}
            handleClick={()=>{window.open("https://adithyanmb-weather.vercel.app/","blank")}}
            />
 
            <Card src={tictactoe} 
-           title={"Tic Tac Toe game" }
+           title={"MP3 Tag Reader/Editor" }
             description={"A simple TIC TAC TOE game , using Vanilla JavasScript ans styled using Bootstrap."}
              tech={"JavaScript · Bootstrap (Framework)"}
              handleClick={()=>{window.open("https://adithyan-mb.github.io/tic_tac_toe/","blank")}}
              />
 
            <Card src={amazon}
-            title={"Amazon clone" }
+            title={"Image Steganography using LSB Encoding and Decoding" }
              description={"Amazon clone (UI clone) using HTML and CSS only"} 
              tech={"HTML5 · Vanilla CSS"}
              handleClick={()=>{window.open("https://adithyan-mb.github.io/amazon-clone/","blank")}}
