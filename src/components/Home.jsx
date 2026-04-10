@@ -35,7 +35,7 @@ useEffect(() => {
                     document.documentElement.style.width = '1366px'
                     document.documentElement.style.height = '690px'
                     document.documentElement.style.overflow = 'hidden'
-                    localStorage.setItem('scaled', 'true')  
+                    //localStorage.setItem('scaled', 'true')  
                   }}
                  
                   className="mt-2 bg-white text-black font-semibold rounded-xl py-2 px-6 hover:bg-white/90 transition"
