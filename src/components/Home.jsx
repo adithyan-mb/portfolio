@@ -7,11 +7,10 @@ const Home = () => {
   const [showAlert, setShowAlert] = useState(false)
 
  
-useEffect(() => {
-  const isMobile = window.innerWidth < 768
-  const alreadyScaled = localStorage.getItem('scaled')
-  if (isMobile && !alreadyScaled) setShowAlert(true)
-}, [])
+ useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    if (isMobile) setShowAlert(true)
+  }, [])
 
   return (
     <div className="bg-[#1E1E1E] flex items-center justify-center h-screen overflow-hidden">
@@ -24,7 +23,7 @@ useEffect(() => {
             <p className="text-sm text-white/60">
               This portfolio is optimized for desktop. 
             </p>
-           <button
+          <button
                   onClick={() => {
                     setShowAlert(false)
                     const scaleX = window.innerWidth / 1366
@@ -35,7 +34,6 @@ useEffect(() => {
                     document.documentElement.style.width = '1366px'
                     document.documentElement.style.height = '690px'
                     document.documentElement.style.overflow = 'hidden'
-                    //localStorage.setItem('scaled', 'true')  
                   }}
                  
                   className="mt-2 bg-white text-black font-semibold rounded-xl py-2 px-6 hover:bg-white/90 transition"
