@@ -6,10 +6,12 @@ const Home = () => {
   const navigate = useNavigate()
   const [showAlert, setShowAlert] = useState(false)
 
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768
-    if (isMobile) setShowAlert(true)
-  }, [])
+ 
+useEffect(() => {
+  const isMobile = window.innerWidth < 768
+  const alreadyScaled = localStorage.getItem('scaled')
+  if (isMobile && !alreadyScaled) setShowAlert(true)
+}, [])
 
   return (
     <div className="bg-[#1E1E1E] flex items-center justify-center h-screen overflow-hidden">
@@ -20,7 +22,7 @@ const Home = () => {
             <p className="text-2xl">🖥️</p>
             <p className="text-lg font-bold font-Helvetica">Best viewed on Desktop</p>
             <p className="text-sm text-white/60">
-              This portfolio is optimized for desktop. Please switch to Desktop mode for better exprience 
+              This portfolio is optimized for desktop. 
             </p>
            <button
                   onClick={() => {
@@ -33,6 +35,7 @@ const Home = () => {
                     document.documentElement.style.width = '1366px'
                     document.documentElement.style.height = '690px'
                     document.documentElement.style.overflow = 'hidden'
+                    localStorage.setItem('scaled', 'true')  
                   }}
                  
                   className="mt-2 bg-white text-black font-semibold rounded-xl py-2 px-6 hover:bg-white/90 transition"
