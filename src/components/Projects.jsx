@@ -30,16 +30,16 @@ const Projects = () => {
 
            <Card 
            src={home_automation} 
-           title={"Home automation using HTTP" }  
-           description={"Home automation monitoring through MQTT."} 
-           tech={"HTTP protocol · Python flask · Arduino IDE · ESP32 · Wi-Fi / local network "}
+           title={"Home automation (HTTP)" }  
+           description={"Home automation monitoring using HTTP."} 
+           tech={"HTTP · Python flask · Arduino IDE · ESP32 · Wi-Fi / local network "}
            handleClick={()=>{window.open("https://github.com/adithyan-mb/Home-automation-using-HTTP","blank")}}
            />
 
           <Card src={lex} 
            title={"Lexical Analyzer" } 
-           description={"Simple Lexical Analyzer in C "} 
-           tech={"C · File operations · Tokenization "}
+           description={"Simple Lexical Analyzer which classifies each token into its corresponding type "} 
+           tech={"C · File operations · Tokenization · CLI "}
            handleClick={()=>{window.open("https://github.com/adithyan-mb/lexical-analyzer","blank")}}
            />
          

@@ -24,7 +24,7 @@ const Github = () => {
                                    name :info.name,
                                    location :info.location,
                                    public_repos :info.public_repos,
-                                   resume_url:"https://drive.google.com/file/d/1HHpWuNGbq4bNwny2w6Gs-u2Vmx_j1MTq/view?usp=drive_link"
+                                   resume_url:"https://drive.google.com/file/d/1des-v_mZUip8QRhsoBTdRtmOkEi653Jo/view?usp=drive_link"
 
                                  }
                                    dispatch(addData(sentinfo))
@@ -87,7 +87,7 @@ devices and integrating software with hardware to build functional, real-world a
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Location : </p>
-                <p> {data.location}</p>
+                <p> {data.location} </p>
               </div>
               <button  onClick={handleResume} className=' h-10 w-50 p-1 bg-[#6027C3]  rounded-lg cursor-pointer '>Download Resume </button>
               
