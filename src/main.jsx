@@ -18,7 +18,7 @@ import store from './components/store/Store.js'
 createRoot(document.getElementById('root')).render(
  
    
-  <div className='flex flex-col h-screen text-white'>
+  <div className='flex flex-col  h-[690px] text-white text-white'>
     <Provider store={store}>
    <RouterProvider router={Router}/>
    </Provider>

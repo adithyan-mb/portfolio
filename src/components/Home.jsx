@@ -22,12 +22,23 @@ const Home = () => {
             <p className="text-sm text-white/60">
               This portfolio is optimized for desktop. Please switch to Desktop mode for better exprience 
             </p>
-            <button
-              onClick={() => setShowAlert(false)}
-              className="mt-2 bg-white text-black font-semibold rounded-xl py-2 px-6 hover:bg-white/90 transition"
-            >
-              Got it
-            </button>
+           <button
+                  onClick={() => {
+                    setShowAlert(false)
+                    const scaleX = window.innerWidth / 1366
+                    const scaleY = window.innerHeight / 768
+                    const scale = Math.min(scaleX, scaleY)
+                    document.documentElement.style.transform = `scale(${scale})`
+                    document.documentElement.style.transformOrigin = 'top left'
+                    document.documentElement.style.width = '1366px'
+                    document.documentElement.style.height = '690px'
+                    document.documentElement.style.overflow = 'hidden'
+                  }}
+                 
+                  className="mt-2 bg-white text-black font-semibold rounded-xl py-2 px-6 hover:bg-white/90 transition"
+                >
+                  Got it
+                </button>
           </div>
         </div>
       )}
@@ -45,7 +56,7 @@ const Home = () => {
         <p className="font-allison text-3xl">Being Better Than Yesterday</p>
       </div>
 
-      <Vip className="h-120" />
+      <Vip className="h-110" />
     </div>
   )
 }
