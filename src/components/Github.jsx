@@ -75,11 +75,11 @@ devices and integrating software with hardware to build functional, real-world a
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Role :</p>
-                <p>Embedded IOT Developer</p>
+                <p>Embedded IOT Engineer </p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Tech Stack : </p>
-                <p>IoT, Arduino, ESP32,Python ,C</p>
+                <p>C, Python, ESP32, ,IoT, Arduino</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Public repos : </p>
