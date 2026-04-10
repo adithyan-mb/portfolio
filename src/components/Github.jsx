@@ -79,7 +79,7 @@ devices and integrating software with hardware to build functional, real-world a
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Tech Stack : </p>
-                <p>C, Python, ESP32, ,IoT, Arduino</p>
+                <p>C, Python, ESP32, IoT, Arduino</p>
               </div>
               <div className='flex gap-2'>
                 <p className='font-bold'>Public repos : </p>
